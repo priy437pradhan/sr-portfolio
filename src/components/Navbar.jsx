@@ -10,7 +10,7 @@ const Navbar = () => {
     { title: 'Experience', to: 'experience' },
     { title: 'Projects', to: 'projects' },
     { title: 'Hire Me', to: 'hire' },
-    // { title: 'Skills', to: 'skills' },
+    { title: 'Skills', to: 'skills' },
     { title: 'Education', to: 'education' },
   ];
 
