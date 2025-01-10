@@ -7,7 +7,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import HireMe from './components/HireMe';
 import Education from './components/Education';
-import Skills from './components/Skills';
+import Skills from './components/skills';
 
 
 function App() {
