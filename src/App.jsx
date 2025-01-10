@@ -9,6 +9,7 @@ import HireMe from './components/HireMe';
 import Education from './components/Education';
 import Skills from './components/Skills';
 
+
 function App() {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
