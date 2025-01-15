@@ -3,12 +3,24 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
-      company: "Company Name",
-      position: "Senior Developer",
-      duration: "2020 - Present",
-      description: "Led development of multiple web applications using React and Node.js"
+      company: "Odisha Television Network",
+      position: "Automation Engineer",
+      duration: "Oct 2024 - Jan 2025",
+      description: "Developed custom API integrations, automated workflows with Deluge scripting, extended Zoho CRM functionality with custom PHP modules, and implemented real-time data synchronization, reporting, and email notification systems using PHP, MySQL, and Zoho CRM triggers to enhance efficiency and streamline operations."
     },
-    // Add more experiences
+    {
+      company: "Dietary Business Intelligence LLC(DBI360)",
+      position: "Software Engineer",
+      duration: "Jan 2024 - Oct 2024",
+      description: "Designed, developed, and maintained high-performance web applications using PHP, Node.js, and MySQL; collaborated with cross-functional teams to deliver innovative solutions; implemented third-party API integrations; ensured code quality through unit testing and debugging; and managed version control and documentation with Git for streamlined development."
+    },
+    {
+      company: "Jeeva Organic Private Limited",
+      position: "Software Engineer",
+      duration: "Dec 2021 - Jan 2024",
+      description: "Developed and tested robust software solutions, managed API-based backend projects with Node.js and PHP, implemented scalable front-end architecture using advanced JavaScript and ES6+ features, delivered high-quality results aligned with specifications, applied agile methodologies for sprint planning and backlog prioritization, and efficiently managed team resources to meet sprint goals on time."
+    }
+    
   ];
 
   return (
