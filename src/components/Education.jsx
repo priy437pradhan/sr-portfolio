@@ -3,12 +3,26 @@ import { motion } from 'framer-motion';
 const Education = () => {
   const education = [
     {
-      school: "University Name",
-      degree: "Bachelor of Science in Computer Science",
-      duration: "2016 - 2020",
-      description: "Graduated with honors. Focus on web development and software engineering."
+      school: "Mahavir Institute of Engineering and Technology (MIET), Khurda, Bhubaneswar",
+      degree: "MCA - Master of Computer Applications",
+      duration: "2018 - 2021",
     },
-    // Add more education
+    {
+      school: "Paradeep Degree College, Paradeep",
+      degree: "B Sc. Mathematics",
+      duration: "2014- 2017",
+    },
+    {
+      school: "Marshaghai College, Marshaghai, Kendrapara",
+      degree: "12th(CHSE Board)",
+      duration: "2012-2014",
+    },
+    {
+      school: "Janasakti High School, Pentha, Kendrapara ",
+      degree: "10th (Higher Secondary Certificate)",
+      duration: "2012",
+    },
+    
   ];
 
   return (
@@ -31,7 +45,7 @@ const Education = () => {
               <h3 className="text-xl font-bold text-purple-400">{edu.degree}</h3>
               <p className="text-gray-400">{edu.school}</p>
               <p className="text-sm text-gray-500">{edu.duration}</p>
-              <p className="mt-2 text-gray-300">{edu.description}</p>
+              {/* <p className="mt-2 text-gray-300">{edu.description}</p> */}
             </motion.div>
           ))}
         </div>

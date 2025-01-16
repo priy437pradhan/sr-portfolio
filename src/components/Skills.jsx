@@ -6,29 +6,26 @@ const Skills = () => {
   const [hoveredCategory, setHoveredCategory] = useState(null);
 
   const skillCategories = [
-    {
-      category: "Frontend",
-      icon: "🎨",
-      mainSkills: ["React", "Vue", "Angular"],
-      subSkills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind", "SASS"]
-    },
+    
     {
       category: "Backend",
-      icon: "⚙️",
-      mainSkills: ["Node.js", "Python", "Java"],
-      subSkills: ["Express", "Django", "Spring", "MongoDB", "PostgreSQL", "Redis"]
+      // icon: "⚙️",
+      mainSkills: ["Node.js", "PHP", "MySQL", "API Ingration"],
+      subSkills: ["JavaScript","jQuery", "CodeIgniter", "Algorithms", "Zapier"],
     },
+    
     {
-      category: "Mobile",
-      icon: "📱",
-      mainSkills: ["React Native", "Flutter", "Swift"],
-      subSkills: ["iOS", "Android", "Expo", "Firebase", "App Store", "Play Store"]
+      category: "Frontend",
+      // icon: "🎨",
+      mainSkills: ["React"],
+      subSkills: ["HTML5", "CSS","Bootstrap"],
     },
+
     {
-      category: "DevOps",
-      icon: "🚀",
-      mainSkills: ["Docker", "Kubernetes", "AWS"],
-      subSkills: ["CI/CD", "Jenkins", "Terraform", "Linux", "Nginx", "Cloud"]
+      category: "SDLC",
+      // icon: "🎨",
+      mainSkills: ["GitHub","JIRA", "Agile Methedology","Bitrix24"],
+      subSkills: ["CI/CD Pipeline", "Vash Templates"],
     }
   ];
 
@@ -49,7 +46,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="min-h-screen pt-20 pb-16 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -68,7 +65,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center"
         >
           {skillCategories.map((category, index) => (
             <motion.div
@@ -85,7 +82,7 @@ const Skills = () => {
                 
                 {/* Category Header */}
                 <div className="flex items-center space-x-3 mb-6">
-                  <span className="text-2xl">{category.icon}</span>
+                  {/* <span className="text-2xl">{category.icon}</span> */}
                   <h3 className="text-xl font-bold text-white">{category.category}</h3>
                 </div>
 

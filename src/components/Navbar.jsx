@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { Github, Linkedin, Twitter, Download } from 'lucide-react';
+import { Github, Linkedin, Twitter, Download ,X ,Menu} from 'lucide-react';
+import cv from  '../documents/cv.pdf';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,15 +10,15 @@ const Navbar = () => {
     { title: 'About', to: 'about' },
     { title: 'Experience', to: 'experience' },
     { title: 'Projects', to: 'projects' },
-    { title: 'Hire Me', to: 'hire' },
+    // { title: 'Hire Me', to: 'hire' },
     { title: 'Skills', to: 'skills' },
     { title: 'Education', to: 'education' },
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/yourusername', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/in/yourusername', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/yourusername', label: 'Twitter' },
+    
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/sambit-ray-software-engineer/', label: 'LinkedIn' },
+    { icon: Twitter, href: 'https://x.com/SambitRay10', label: 'Twitter' },
   ];
 
   return (
@@ -25,7 +26,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold">Portfolio</h1>
+            <h1 className="text-xl font-bold">Sambit Ray</h1>
           </div>
           
           {/* Desktop Menu */}
@@ -65,7 +66,7 @@ const Navbar = () => {
 
             {/* CV Download Button - Desktop */}
             <a
-              href="/path-to-your-cv.pdf"
+              href={cv}
               download
               className="ml-4 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-purple-600 hover:bg-purple-700 transition-colors"
             >
@@ -76,21 +77,17 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
+          <button
+      onClick={() => setIsOpen(!isOpen)}
+      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none"
+    >
+      <span className="sr-only">Open main menu</span>
+      {isOpen ? (
+        <X className="h-6 w-6" />
+      ) : (
+        <Menu className="h-6 w-6" />
+      )}
+    </button>
           </div>
         </div>
       </div>
@@ -132,7 +129,7 @@ const Navbar = () => {
 
           {/* CV Download Button - Mobile */}
           <a
-            href="/path-to-your-cv.pdf"
+            href={cv}
             download
             className="block mx-3 px-4 py-2 text-center rounded-md shadow-sm text-white bg-purple-600 hover:bg-purple-700 transition-colors"
           >

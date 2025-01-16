@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import pp from '../images/pp.jpeg';
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
         className="max-w-4xl mx-auto text-center"
       >
         <img
-          src="/your-photo.jpg"
+          src={pp}
           alt="Profile"
           className="w-48 h-48 rounded-full mx-auto mb-8 object-cover border-4 border-purple-500"
         />

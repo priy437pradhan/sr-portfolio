@@ -5,9 +5,10 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import HireMe from './components/HireMe';
+// import HireMe from './components/HireMe';
 import Education from './components/Education';
 import Skills from './components/Skills';
+import Footer from './components/footer';
 
 
 function App() {
@@ -19,9 +20,11 @@ function App() {
         <Experience />
         <Projects />
         <Skills />
-        <HireMe />
+        {/* <HireMe /> */}
         <Education />
+       
       </div>
+      <Footer />
     </div>
   );
 }
