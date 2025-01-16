@@ -65,7 +65,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
         >
           {skillCategories.map((category, index) => (
             <motion.div

@@ -2,7 +2,7 @@
 function footer() {
   return (
     <footer className="bg-gray-800 text-white text-center mt-16 py-4">
-    <p>&copy; {new Date().getFullYear()} Sambit Ray. All rights reserved.</p>
+    <p> All rights reserved by Sambit Ray &copy; {new Date().getFullYear()}</p>
   </footer>
   )
 }
